@@ -12,7 +12,7 @@ user_have_token = raw_input("Do you have an access token? y/n  ")
 n = str('n')
 y = str('y')
 if user_have_token is n:
-    facebook_request = requests.get('https://graph.facebook.com/'+str(userid)+"?access_token=EAACEdEose0cBAGB7gRHedHZCzb97KE6RbVaAPmjBeZCKuvOlOgtYnJ9HO1QGEAaWFNLePAZAZCynmPRiAEpqyPk2MwCvVvEggvC5JGTJs4njvCuU62hmCRGF4kg4PMQoUxY6GFpY03m2PpulB4YHbpLUP7qChzMGS9TGwKvIvKaeAOAjPJdrzInfCUXeQxwZD")
+    facebook_request = requests.get('https://graph.facebook.com/'+str(userid)+"?access_token=EAACEdEose0cBALtdu49SgChQjKnAen22FZB38tvvAAJpNOjNv82xRlVTpZAPASZBBVmZAGTVZAnZAZCuPQQ7ZB3517eS7XlycuWRkZBodRn72SL9gZCvxElIWZBq4COCnwjwUR1jLaobU0q9J7g60En0kia0Mc7k2ts7hWXwx5tkZCmeMs6MKgxNasNewYZAdcblMAhYZD")
 
     print("Connecting...")
     if facebook_request.status_code is 200:
