@@ -12,7 +12,7 @@ user_have_token = raw_input("Do you have an access token? y/n  ")
 n = str('n')
 y = str('y')
 if user_have_token is n:
-    facebook_request = requests.get('https://graph.facebook.com/'+str(userid)+"?access_token=EAACEdEose0cBALtdu49SgChQjKnAen22FZB38tvvAAJpNOjNv82xRlVTpZAPASZBBVmZAGTVZAnZAZCuPQQ7ZB3517eS7XlycuWRkZBodRn72SL9gZCvxElIWZBq4COCnwjwUR1jLaobU0q9J7g60En0kia0Mc7k2ts7hWXwx5tkZCmeMs6MKgxNasNewYZAdcblMAhYZD")
+    facebook_request = requests.get('https://graph.facebook.com/'+str(userid)+"?access_token=321713511595396|Yezd2aNvkEkOs9qYXGiQN-QHcKs")
 
     print("Connecting...")
     if facebook_request.status_code is 200:
@@ -20,7 +20,7 @@ if user_have_token is n:
         json = facebook_request.json()
         print(json)
         print("..")
-        see_profile = raw_input("Do you want to see the facebook profile on browser?")
+        see_profile = raw_input("Do you want to see the facebook profile on browser? y/n  ")
         if see_profile is n:
             print("Okay, bye bye")
         elif see_profile is y:
